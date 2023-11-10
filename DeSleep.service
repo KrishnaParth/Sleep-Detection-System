@@ -1,0 +1,31 @@
+[Unit]
+
+Description=Sleep Detection System
+
+After=multi-user.target
+
+After=syslog.target
+
+After=network.target
+
+
+
+[Service]
+
+Type=idle
+
+User=rasp-14841
+
+WorkingDirectory=/home/rasp-14841/Desktop/De-SleepVE/SleepDetectionSystem
+
+ExecStart=sudo bash /home/rasp-14841/on_reboot.sh
+
+Restart=on-failure
+
+RestartSec=5
+
+
+[Install]
+
+WantedBy=multi-user.target
+

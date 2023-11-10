@@ -1,0 +1,38 @@
+Motor Driver - Rpi Connections
+IN1 - 15
+IN2 - 18
+EN  - 13
+
+LCD - Rpi Connections : 16bit Mode
+
+VSS - -ve Rail Breadboard
+VDD - +ve Rail Breadboard
+V0  - -ve Rail
+RS  - 37
+RW  - -ve
+E   - 35
+D0  - 40
+D1  - 38
+D2  - 36
+D3  - 32
+D4  - 33
+D5  - 31
+D6  - 29
+D6  - 23
+A   - +ve Rail
+K   - -ve Rail
+
+MQ3 Sensor - Rpi
+
+D0  - 11
+VCC - +ve Rail
+GND - -ve Rail
+
+GPS - Rpi
+
+VCC - +ve Rail
+GND - -ve Rail
+RX  - TX [8]
+TX  - RX [10]
+
+
