@@ -19,10 +19,10 @@ import socket
 #-------------------------------------------------------------
 
 #MQTT_TOPIC="sdk/test/python" # POC/De-Sleep
-#MQTT_ENDPOINT="a37j1ob20jgo2h-ats.iot.eu-north-1.amazonaws.com"
+#MQTT_ENDPOINT="ENTER ENDPOINT"
 
 MQTT_TOPIC="desleep/cams/krishnacam" # POC/De-Sleep
-MQTT_ENDPOINT="a37j1ob20jgo2h-ats.iot.us-east-1.amazonaws.com"
+MQTT_ENDPOINT="ENTER ENDPOINT"
 
 def mqtt_setup():
     print(" < Setting up MQTT Connection > ")
@@ -30,8 +30,8 @@ def mqtt_setup():
     myMQTTClient = AWSIoTMQTTClient("basicPubSub")  #basicPubSub DeSleep
     myMQTTClient.configureEndpoint(MQTT_ENDPOINT, 8883)
 
-    myMQTTClient.configureCredentials("/home/rpi/Desktop/De-Sleep/certificates/jsnode/root-CA.crt", "/home/rpi/Desktop/De-Sleep/certificates/jsnode/krishnacam.private.key", "/home/rpi/Desktop/De-Sleep/certificates/jsnode/krishnacam.cert.pem")
-    #myMQTTClient.configureCredentials("/home/rasp-14841/Desktop/certificates/py/root-CA.crt", "/home/rasp-14841/Desktop/certificates/py/RaspberryPi.private.key", "/home/rasp-14841/Desktop/certificates/py/RaspberryPi.cert.pem")
+    myMQTTClient.configureCredentials("ROOT CA", "PRIVATE KEY", "CERTIFICATE PEM")
+    #myMQTTClient.configureCredentials("ROOT CA", "PRIVATE KEY", "CERTIFICATE PEM")
     
     myMQTTClient.configureOfflinePublishQueueing(-1) # Infinite offline Publish queueing
     myMQTTClient.configureDrainingFrequency(2) # Draining: 2 Hz
