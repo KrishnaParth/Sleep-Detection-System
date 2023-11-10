@@ -68,8 +68,8 @@ def publish_payloads_from_file(myMQTTClient):
         pass # file.writelines(lines[len(buffer):])
 
 # def main():
-#     Lat = 42.123  # Replace with actual latitude
-#     Long = -71.456  # Replace with actual longitude
+#     Lat =  # Replace with actual latitude
+#     Long = # Replace with actual longitude
 #     SaveLogs(Lat, Long, True, False, False, False)
 #     publish_payloads_from_file(True)
 
